@@ -1,6 +1,6 @@
 # todo-CICD-jenkins
-#requirements
-#docker
-#aws
-#github
-#jenkins
+# requirements
+# docker
+# aws
+# github
+# jenkins

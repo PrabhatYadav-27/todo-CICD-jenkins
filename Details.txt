@@ -1,0 +1,5 @@
+# Requirements
+*AWS ACCOUNT
+*DOCKER
+*JENKINS
+*GITHUB

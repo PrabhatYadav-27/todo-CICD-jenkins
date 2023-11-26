@@ -1,0 +1,2 @@
+Setup all the prequisites like docker jenkins github and aws account on your machine 
+

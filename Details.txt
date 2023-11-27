@@ -3,3 +3,4 @@
 *DOCKER
 *JENKINS
 *GITHUB
+This project is all about creating a  CICD pipeline by using jenkins and integrate the github repo to automaically build the code. 

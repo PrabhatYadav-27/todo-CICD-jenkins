@@ -3,3 +3,4 @@
 *DOCKER
 *JENKINS
 *GITHUB
+this project is all about building a full cicd pipeline via jenkins.

@@ -1,2 +1,9 @@
 Setup all the prequisites like docker jenkins github and aws account on your machine 
+1.Create ec2 instance
+2.Install  java jdk and jenkins on ec2 as i have selected ubuntu .
+3.Make a freestyle project on jenkins and install all the suggested plugins .
+4. Making a freestyle pipeline for this project
+5.Select github and give the url of your repository also do same for source code management and select git along with the URL.
+(If your repo is public then url is sufficient otherwise you have to provide the credentials or your github)
+6.
 

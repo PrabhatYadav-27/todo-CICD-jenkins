@@ -4,3 +4,8 @@
 *JENKINS
 *GITHUB
 This project is all about creating a  CICD pipeline by using jenkins and integrate the github repo to automaically build the code. 
+
+#overview
+This project will deliver the node based app  on aws ec2 and we will be using the docker for containarization so that our app will run and have dependencies in all kind of machine envirement
+after that we will integrate the github code with the jenkins to create a pipeline for our code base 
+and finally we will deliver the app on EC2.

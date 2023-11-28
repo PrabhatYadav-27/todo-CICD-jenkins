@@ -5,5 +5,5 @@ Setup all the prequisites like docker jenkins github and aws account on your mac
 4. Making a freestyle pipeline for this project
 5.Select github and give the url of your repository also do same for source code management and select git along with the URL.
 (If your repo is public then url is sufficient otherwise you have to provide the credentials or your github)
-6.
+6.Install nodejs and npm in ubuntu 
 

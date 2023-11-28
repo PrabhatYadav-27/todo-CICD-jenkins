@@ -91,13 +91,13 @@
     <body>
         <h1>Todo List - Made using Node</h1>
         <ul>
-            <% todolist.forEach(function(todo, index) { %>
+            % todolist.forEach(function(todo, index) { %>
             <li>
-                <a href="/todo/delete/<%= index %>" class="delete-btn">✘</a>
-                <a href="/todo/<%= index %>" class="edit-btn">✎</a>
-                <%- todo %>
+                <a href="/todo/delete/%= index %>" class="delete-btn">✘</a>
+                <a href="/todo/%= index %>" class="edit-btn">✎</a>
+                 todo %>
             </li>
-            <% }); %>
+            % }); %>
         </ul>
 
         <form action="/todo/add/" method="post">

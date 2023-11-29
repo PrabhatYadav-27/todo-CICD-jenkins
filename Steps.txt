@@ -33,4 +33,19 @@ A. BUILD STEPS.
 B. EXECUTE SHELL.
 docker build . -t  todo-node-app
 docker run -d --name todo-node-webapp -p 8000:8000 todo-node-app
+15.if you get any issiue with build then try this command
+ sudo usermod -a -G docker jenkins
+Then restart jenkins 
+systemctl restart jenkins
+16. BUILD this will automatically do everything for you to create a image and container
 
+#NOW WE WILL CONFIGURE WEBHOOKS TO AUTOMATICALLY BUILD AFTER CODE PUSH TO github
+
+17. Insatll guthub integration plugin from jenkins
+18.You should have ssh and gpg key then go to repository setting and select webhooks.
+19. Give jenkins url as a payload url
+yourjenkinsurl/github-webhook/
+20.Go to security group and change port no 8080 destination as anywhere from my ip
+21. On github select application json and click on just hte push event and add the hook
+this will integrate the github with jenkins
+22. Go to jenkins job and configure the build triggers to github hooks trigger forgitscm polling

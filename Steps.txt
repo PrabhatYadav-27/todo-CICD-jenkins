@@ -6,4 +6,31 @@ Setup all the prequisites like docker jenkins github and aws account on your mac
 5.Select github and give the url of your repository also do same for source code management and select git along with the URL.
 (If your repo is public then url is sufficient otherwise you have to provide the credentials or your github)
 6.Install nodejs and npm in ubuntu 
+7.setup ur tcp port to 8000 to open the app and add this rule in security group, then coopy the ece2 ip along with 8000 port
+8.Remove the docker file and install docker on your system to fully automate the integration of github and jenkins. sudo apt install docker.io
+9.IN your terminal open vim Dockerfile to create a dockerfile 
+
+FROM node:18.11.0-alpine
+WORKDIR app
+COPY . .
+RUN npm install
+EXPOSE 8000
+CMD ["node","app.js"]
+
+10. Run this command after that 
+docker build . -t nameofyourimages
+11. Above command will create the docker image of your container.
+12 Run this command 
+docker run -d --name todo-node-webapp -p 8000:8000 todo-node-app
+this will run the docker container of your app.
+13. Now kill the docker container by running  the docker kill imageid
+and move to jenkins for fully automation
+
+#FULLY AUTOMATION THROUGH CICD
+
+14.Go to your jenkins job item and move to configure select build and write the steps to automate all the proccess which we have manually done above 
+A. BUILD STEPS.
+B. EXECUTE SHELL.
+docker build . -t  todo-node-app
+docker run -d --name todo-node-webapp -p 8000:8000 todo-node-app
 
